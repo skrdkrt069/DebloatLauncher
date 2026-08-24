@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <Title>Dwin</Title>
+    <Version>0.69</Version>
+    <Company>Aidstem Team</Company>
+    <Authors>skrr</Authors>
+    <Copyright>♿skrr 2026©</Copyright>
+    <PackageIcon>Image1.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="click.wav" />
+    <None Remove="complete.wav" />
+    <None Remove="DWin_v0.69.exe" />
+    <None Remove="icon.ico" />
+    <None Remove="music.mp3" />
+    <None Remove="Sidebar antiga.txt" />
+    <None Remove="sidebar_clean.bmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="click.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="complete.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon.ico" />
+    <Content Include="music.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="DWin_v0.69.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Image1.png" />
+    <Content Include="sidebar_clean.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Image1.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
